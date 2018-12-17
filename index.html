@@ -17,9 +17,17 @@ and open the template in the editor.
 
         <p id="demo"></p>
 
-        <input type="text" id="gitLatitude" value=""/>
-        <input type="text" id="gitLongitude" value=""/>
-        
+        <div>
+            <label>Lat</label>
+            <input type="text" id="gitLatitude" value=""/>
+        </div>
+
+        <div>
+            <label>Long</label>
+            <input type="text" id="gitLongitude" value=""/>
+        </div>
+
+
         <script>
             var x = document.getElementById("demo");
 
@@ -34,7 +42,7 @@ and open the template in the editor.
             function showPosition(position) {
                 x.innerHTML = "Latitude: " + position.coords.latitude +
                         "<br>Longitude: " + position.coords.longitude;
-                
+
                 alert(position.coords.latitude);
                 $('#gitLatitude').val(position.coords.latitude);
                 $('#gitLongitude').val(position.coords.longitude);
