@@ -44,8 +44,8 @@ and open the template in the editor.
                         "<br>Longitude: " + position.coords.longitude;
 
                 alert(position.coords.latitude);
-                $('#gitLatitude').val(position.coords.latitude);
-                $('#gitLongitude').val(position.coords.longitude);
+                document.getElementById('gitLatitude').value = position.coords.latitude;
+                document.getElementById('gitLongitude').value = position.coords.longitude;
             }
         </script>
     </body>
