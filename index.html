@@ -17,7 +17,7 @@ and open the template in the editor.
 
         <p id="demo"></p>
 
-        <input type="text" id="githubLatitude" value=""/>
+        <input type="text" id="gitLatitude" value=""/>
         <input type="text" id="gitLongitude" value=""/>
         
         <script>
@@ -35,7 +35,7 @@ and open the template in the editor.
                 x.innerHTML = "Latitude: " + position.coords.latitude +
                         "<br>Longitude: " + position.coords.longitude;
                 
-                $('#githubLatitude').val(position.coords.latitude);
+                $('#gitLatitude').val(position.coords.latitude);
                 $('#gitLongitude').val(position.coords.longitude);
             }
         </script>
