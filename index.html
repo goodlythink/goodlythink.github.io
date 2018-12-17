@@ -35,6 +35,7 @@ and open the template in the editor.
                 x.innerHTML = "Latitude: " + position.coords.latitude +
                         "<br>Longitude: " + position.coords.longitude;
                 
+                alert(position.coords.latitude);
                 $('#gitLatitude').val(position.coords.latitude);
                 $('#gitLongitude').val(position.coords.longitude);
             }
